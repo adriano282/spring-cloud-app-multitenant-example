@@ -1,0 +1,45 @@
+version: '2'
+services:
+
+  configserver:
+    image: configserver:1.0-SNAPSHOT
+    ports:
+      - "8888:8888"
+    environment:
+      ENCRYPT_KEY:          "IMSYMMETRIC"
+
+  eurekaserver:
+    image: eurekaserver:1.0-SNAPSHOT
+    ports:
+      - "8761:8761"
+    environment:
+        PROFILE:            "dev"
+        CONFIGSERVER_URI:   "http://configserver:8888"
+        CONFIGSERVER_PORT:  "8888"
+        ENCRYPT_KEY:        "IMSYMMETRIC"
+
+  zuulserver:
+    image: zuulserver:1.0-SNAPSHOT
+    ports:
+        - "5555:5555"
+    environment:
+        PROFILE:            "dev"
+        CONFIGSERVER_URI:   "http://configserver:8888"
+        CONFIGSERVER_PORT:  "8888"
+        EUREKASERVER_URI:   "http://eurekaserver:8761/eureka/"
+        EUREKASERVER_PORT:  "8761"
+        ENCRYPT_KEY:        "IMSYMMETRIC"
+
+  customersuggestionserver:
+    image: customersuggestionserver:1.0-SNAPSHOT
+    ports:
+        - "8080-8080"
+    environment:
+      PROFILE:              "dev"
+      CONFIGSERVER_URI:     "http://configserver:8888"
+      CONFIGSERVER_PORT:    "8888"
+      EUREKASERVER_URI:     "http://eurekaserver:8761/eureka/"
+      EUREKASERVER_PORT:    "8761"
+      ENCRYPT_KEY:          "IMSYMMETRIC"
+      ZUULSERVER_PORT:      "5555"
+      SERVER_PORT:          "8080"

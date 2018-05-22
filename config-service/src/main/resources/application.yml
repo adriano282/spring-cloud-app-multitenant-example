@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/adriano282/spring-cloud-app-multitenant-example-config
+          searchPaths: eureka-service,customer-suggestion,zuul-service
+          username: "adriano.jesus2@fatec.sp.gov.br"
+          password: "{cipher}0753c7bf7a9e3b7bfab70926a4386cde4d432a26b3a8970bffa6bb0feb0850fd"
