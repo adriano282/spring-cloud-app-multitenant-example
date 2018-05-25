@@ -1,6 +1,19 @@
 # spring-cloud-app-multitenant-example
 
-teps to run this project in local machine:
+It is a sample API: data clients suggests.
+
+Some Applied Tecnologies:
+
+    Zuul Server as Edge Server;
+    Eureka Server as Service Discovery and Registration
+    Spring Cloud Config for Centralization of Configurations
+    Docker to virtualization environment
+    Docker Compose to orchestrate the docker containers
+    Spring Boot 2.0
+   
+The multitenant logic is applied through the Zuul Filter and Filter from Servlet Lib.
+
+Steps to run this project in local machine:
 
 1. Clone repository:
     git clone https://adrianoj@bitbucket.org/ifcintegration/ifc-integration.git
