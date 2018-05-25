@@ -10,13 +10,14 @@ Some Applied Tecnologies:
     Docker to virtualization environment
     Docker Compose to orchestrate the docker containers
     Spring Boot 2.0
+    Spotify Maven Docker Plugin
    
 The multitenant logic is applied through the Zuul Filter and Filter from Servlet lib.
 
 Steps to run this project in local machine:
 
 1. Clone repository:
-    https://github.com/adriano282/spring-cloud-app-multitenant-example.git
+    git clone https://github.com/adriano282/spring-cloud-app-multitenant-example.git
     
 2. Build the entire project:
     mvn clean install
