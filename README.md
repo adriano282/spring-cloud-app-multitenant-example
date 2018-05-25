@@ -16,7 +16,7 @@ The multitenant logic is applied through the Zuul Filter and Filter from Servlet
 Steps to run this project in local machine:
 
 1. Clone repository:
-    git clone https://adrianoj@bitbucket.org/ifcintegration/ifc-integration.git
+    https://github.com/adriano282/spring-cloud-app-multitenant-example.git
     
 2. Build the entire project:
     mvn clean install
