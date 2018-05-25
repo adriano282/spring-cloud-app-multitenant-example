@@ -34,4 +34,6 @@ Available endpoints through ZuulServer:
         "postalCode": "99999999"
     }
     
-GET http://localhost:5555/api/customersuggestion/v1/customers/{document-number}
+    GET http://localhost:5555/api/customersuggestion/v1/suggests/{document-number}
+    
+    GET http://localhost:5555/api/customersuggestion/v1/suggests
