@@ -11,7 +11,7 @@ Some Applied Tecnologies:
     Docker Compose to orchestrate the docker containers
     Spring Boot 2.0
    
-The multitenant logic is applied through the Zuul Filter and Filter from Servlet Lib.
+The multitenant logic is applied through the Zuul Filter and Filter from Servlet lib.
 
 Steps to run this project in local machine:
 
