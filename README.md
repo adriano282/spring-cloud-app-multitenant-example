@@ -6,7 +6,7 @@ Some Applied Tecnologies:
 
     Zuul Server as Edge Server;
     Eureka Server as Service Discovery and Registration
-    Spring Cloud Config for Centralization of Configurations
+    Spring Cloud Config to centralization of configurations
     Docker to virtualization environment
     Docker Compose to orchestrate the docker containers
     Spring Boot 2.0
