@@ -53,9 +53,11 @@ Available endpoints through ZuulServer:
     GET http://localhost:5555/api/customersuggestion/v1/suggests
 
 Some references used:
+
     https://github.com/ramsrib/multi-tenant-app-demo
     https://github.com/spring-labs/tenancy-sample/tree/master/sample-hibernate
     https://www.amazon.com/Spring-Microservices-Action-John-Carnell/dp/1617293989/ref=sr_1_2?ie=UTF8&qid=1527215070&sr=8-2&keywords=spring+microservices+in+action
     
 Other interesting links:
+
     https://dzone.com/articles/spring-boot-hibernate-multitenancy-implementation
